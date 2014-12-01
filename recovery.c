@@ -1042,7 +1042,7 @@ main(int argc, char **argv) {
         case 'u': update_package = optarg; break;
         case 'w':
 #ifndef BOARD_RECOVERY_ALWAYS_WIPES
-        wipe_data = wipe_cache = 1;
+        wipe_data = wipe_cache = 0; // 1; // Disable factory reset
 #endif
         break;
         case 'h':
